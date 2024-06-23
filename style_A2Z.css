@@ -1,0 +1,425 @@
+:root{
+    --button:#0077ff;
+    --colorbutton:#ffffff;
+    --header:#ffffff;
+    --bkbody:#e2e0e0;
+    --input:#f8f8f84b;
+    --linkcolor:#111;
+    --scrollbutton:#2222222a;
+    --table:#ffffff63;
+    --tabcolor:#033a79;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bkbody);
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header);
+    filter: drop-shadow(5px 10px 16px #9b9b9b);
+    z-index: 1;
+}
+form{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+form input{
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    background-color: var(--input);
+    border: #fff 1px solid ;
+}
+form button{
+    width: 10%;
+    height: 30px;
+    background-color: var(--button);
+    border: #fff 1px solid ;
+    border-radius: 5px;
+    color: var(--colorbutton);
+}
+.car_shoping button{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+}
+/*قائمة الاقسام والعروض*/
+section{
+    display: flex;
+    justify-content: center;
+    
+    gap: 20px;
+    margin-top: 50px;
+}
+article{
+    background-color: var(--header);
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    line-height: 40px;
+}
+article ul, article a{
+    list-style: none;
+    text-decoration: none;
+    color:var(--linkcolor) ;
+    margin-top: 50px;
+    margin-right: 15px;
+    transition: 0.5s;
+    font-size: large;
+    
+}
+a:hover{
+    color: var(--button);
+}
+.slid img{
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--header);
+    width:1135px;
+    height: 150px;
+    border-radius: 10px;
+}
+.offer img{
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+}
+.offer_oneday{
+    background-color: var(--header);
+    width:1135px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.head{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    gap: 80px;
+
+}
+.head h2{
+    color: rgb(146, 19, 19);
+}
+.head a{
+    color: var(--button);
+}
+.head button{
+   background-color: var(--scrollbutton);
+   border: none;
+   height: 30px;
+   width: 120px;
+   text-align: center;
+   border-radius: 10px;
+   transform: translateX(-570px);
+}
+.offer_img::-webkit-scrollbar{
+    width: 0px;
+  }
+.offer_img::-webkit-scrollbar-thumb{
+      background: #33333300;
+  }
+ 
+.offer_img{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    gap: 20px;
+    height: 350px;
+    transform: translateY(-60px);
+    z-index: 0;
+}
+.offer_img .card{
+    line-height: 40px;
+}
+.offer_img img{
+    width: 150px;
+    height: 150px;
+}
+.offer_img .card a{
+color: var(--linkcolor);
+}
+.offer_img .card button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.offer_img .card button:hover,.offer_img .card a:hover{
+    background-color: var(--bkbody);
+   color: var(--linkcolor);
+    
+}
+.button_scroll button{
+    position:relative;
+    background: var(--scrollbutton);
+    font-size: larger;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ffffff ;
+    border-radius: 50%;
+   transform: translateY(100px)
+    translateX(-16px);
+    z-index: 1;
+
+}
+
+.butt h3{
+   margin-right: 1000px;
+
+   
+}
+.butt {
+    width: 900px;
+    background-color: var(--linkcolor);
+}
+.next{
+    top:10px;
+    transition: 0.5s;
+}
+.prov{
+    right: 1000px;
+    top:20px;
+    transition: 0.5s;
+}
+.prov:hover,.next:hover{
+    background-color: var(--header);
+}
+/*خصومات المنتجات-*/
+.dvice{
+    background-color: var(--header);
+    width:1155px;
+    height: 300px;
+    border-radius: 10px;
+}
+.header_dvice h2{
+   margin-right: 430px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.offer_dvice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.offer_dvice img{
+    width: 200px;
+    height: 200px;
+}
+.offer_dvice_cards{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    gap: 20px;
+    height: 350px;
+    transform: translateY(-60px);
+    z-index: 0;
+}
+.offer_dvice_cards img {
+    width: 150px;
+    height: 150px;
+}
+.offer_dvice_cards::-webkit-scrollbar{
+    width: 0px;
+  }
+  .offer_dvice_cards::-webkit-scrollbar-thumb{
+      background: #33333300;
+  }
+  .offer_dvice_cards .card{
+    line-height: 40px;
+}
+.offer_dvice_cards .card a{
+    color: var(--linkcolor);
+    }
+.offer_dvice_cards .card button{
+        border: none;
+        width: 150px;
+        height: 30px;
+        background-color: var(--button);
+        color: var(--colorbutton);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+.offer_dvice_cards button:hover,.offer_dvice_cards a:hover{
+        background-color: var(--bkbody);
+       color: var(--linkcolor);
+        
+    }
+
+    /*table order*/
+.cart{
+    display: flex;
+    justify-content: center;
+   
+}
+table{
+    border: solid 1px var(--linkcolor);
+    background-color: var(--table);
+    width: 600px;
+    margin-top: 200px;
+    text-align: center;
+    color: var(--tabcolor);
+    font-weight: bold;
+}
+th,td{
+    height: 40px;
+}
+caption{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--button);
+}
+.checkout{
+    margin-right: 430px;
+    margin-top: 10px;
+}
+.checkout button{
+    background-color: var(--scrollbutton);
+    border: none;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transform: translateX(-380px);
+}
+.checkout a{
+    color: var(--button);
+}
+/*profile user*/
+.profile{
+    background-color: var(--header);
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+.profile_img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 50px;
+    border: 1px solid var(--tabcolor);
+}
+.profile_button {
+    width: 100%;
+  
+}
+.profile_button button {
+    width: 90%;
+    height: 40px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 10px;
+  
+}
+.profile_button a{
+  color: var(--colorbutton);
+}
+.profile_detalis{
+    background-color: var(--header);
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.caption{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+nav{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+nav ul{
+    list-style:circle;
+    line-height: 50px;
+    font-size: 25px;
+}
+/*product dvices*/
+.depart{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--header);
+    width:1135px;
+    height: 200px;
+    border-radius: 10px;
+}
+.dpart_name{
+    width:1135px;
+    text-align: center;
+    margin-top: 10px;
+}
+.head2{
+    display: flex;
+     margin-right: 50px;
+    align-items: center;
+    gap: 80px;
+
+}
+.head2 h2{
+    color:var(--button);
+}
+.head2 a{
+    color: var(--button);
+}
+.head2 button{
+   background-color: var(--scrollbutton);
+   border: none;
+   height: 30px;
+   width: 120px;
+   text-align: center;
+   border-radius: 10px;
+   transform: translateX(-700px);
+}
+.offers_computer{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--header);
+    width:1135px;
+    height: 270px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.offer_dvice_computer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.offer_dvice_computer img{
+    width: 350px;
+    height: 200px;
+ } 
